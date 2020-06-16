@@ -21,6 +21,7 @@ You can create specific classes of abilities by using the following arguments se
 - **saves** Creates a dropdown menu of all saving throws
 - **init** Creates a button that rolls initiative for the selected token
 - **name** Normally, Token Actions are created using the character_id. They will still function even if the character is renamed. However this is not always desireable. If a character is moved to a new game via the Character Vault, it will receive a new character_id, and the token actions will not function. If you intend to move the character, use the "name" argument in the string and it will call the token actions by name.
+- **breakout** Added in version 0.3.1 to allow legendary functionality of having attacks, legendary action, and traits have a token action created for each individual activity (e.g. longsword, longbow, etc.).  Default behavior now will add these to chat menus to free up screen space.
 - **help** Calls up this help documentation
 
 Examples:
@@ -28,3 +29,9 @@ Examples:
 **!ta saves checks** will create token ability buttons for Ability Checks and Saving Throws.
 
 **!ta name** will create alltoken ability buttons and identify them by name, rather than character_id.
+
+[Version 0.3.1]
+- Spells template now show spell save dc, and spell slots available for use.
+- Attacks, Legendary Actions, Traits, and Reactions now will default to be placed inside a clickable chat menu consistent with spells.
+- Added argument for "breakout" which allows to keep token actions separate for Attacks, Legendary Actions, Traits, and Reactions.
+
